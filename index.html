@@ -6,22 +6,25 @@
   <meta name="description" content="Portfolio of Janarthanan P — MCA Graduate | Full Stack Developer | AI/ML Enthusiast" />
   <title>Janarthanan P | Portfolio</title>
 
-  <!-- Tailwind CSS CDN -->
+<!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Font -->
+<!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- AOS (Animate On Scroll) -->
+<!-- AOS (Animate On Scroll) -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Typed.js -->
+<!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+ <!-- Font Awesome (required for icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <style>
     body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
     .gradient-bg {
-      background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+      background: linear-gradient(135deg, #2563eb 25%, #1e3a8a 75%);
     }
   </style>
 </head>
@@ -34,9 +37,12 @@
       <div class="space-x-4 hidden sm:block">
         <a href="#about" class="hover:text-blue-600">About</a>
         <a href="#education" class="hover:text-blue-600">Education</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
         <a href="#projects" class="hover:text-blue-600">Projects</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-        <a href="resume/Janarthanan_Resume.pdf" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Resume</a>
+        <a href="#certifications" class="hover:text-blue-600">Certifications</a>
+        <a href="#extra-curricular" class="hover:text-blue-600">Extra-Curricular Activities</a>
+        <a href="#about" class="hover:text-blue-600">Contact</a>
+        <a href="assets/resume/Resume All in One.pdf" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"> Resume</a>
       </div>
     </div>
   </nav>
@@ -44,91 +50,282 @@
   <!-- Hero Section -->
   <section class="h-screen flex flex-col justify-center items-center text-center px-6 gradient-bg text-white">
     <div data-aos="fade-up">
-      <img src="assets/img/profile.jpg" alt="Profile photo" class="w-36 h-36 rounded-full border-4 border-white shadow-lg mb-6 object-cover" onerror="this.style.display='none'">
+      <div class="flex justify-center">
+        <img src="assets/img/profile.jpg" alt="Profile photo" class="flex justify-center w-36 h-36 rounded-full border-4 border-white shadow-lg mb-6 object-cover bg-red-500" onerror="this.style.display='none'">
+      </div>
       <h2 class="text-3xl sm:text-4xl font-bold mb-2">Hi, I'm <span class="text-yellow-300">Janarthanan P</span></h2>
-      <h3 class="text-xl sm:text-2xl font-medium mb-4">MCA Graduate |Software Developer | Full Stack Developer | AI/ML Enthusiast</h3>
+      <h3 class="text-xl sm:text-2xl font-medium mb-4"><br>
+        <a href="assets/resume/SE.pdf" class="border-2 border-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition">Software Developer</a> | 
+        <a href="assets/resume/SE.pdf" class="border-2 border-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition">Full Stack Developer</a> | 
+        <a href="assets/resume/AI ML DS.pdf" class="border-2 border-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition">AI/ML/DS Enthusiast</a>
+        <br><br>
+        <a href="assets/resume/QA ST.pdf" class="border-2 border-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition">Software Testing and Quality Assurance</a>
+        <br><br>        
+      </h3>
       <span id="typed" class="text-lg sm:text-xl italic text-gray-100"></span>
       <div class="mt-8 space-x-4">
-        <a href="#projects" class="bg-white text-blue-700 font-semibold px-6 py-2 rounded-md shadow hover:bg-gray-200 transition">View Projects</a>
-        <a href="#contact" class="border-2 border-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition">Contact Me</a>
-      </div>
-      <div class="flex justify-center space-x-6 mt-8 text-2xl">
-        <a href="https://linkedin.com/in/janarthanan-p-8a887b247" target="_blank" aria-label="LinkedIn" class="hover:text-yellow-300"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/janarthanan14" target="_blank" aria-label="GitHub" class="hover:text-yellow-300"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:janarthanan14723@gmail.com" class="hover:text-yellow-300"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#projects" class="border-2 border-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition">View Projects</a>
+        <a href="#about" class="border-2 border-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition">Contact Me</a>
       </div>
     </div>
   </section>
 
-  <!-- About Placeholder -->
+  <!-- About Section -->
   <section id="about" class="max-w-4xl mx-auto py-20 px-6" data-aos="fade-up">
     <h2 class="text-3xl font-bold text-center mb-6 text-blue-700">About Me</h2>
-    <p class="text-center text-gray-700 leading-relaxed">
+    <p class="text-center text-gray-700 leading-relaxed mb-8">
       I am a recent MCA graduate with a strong interest in programming, software development, 
       and problem-solving. Passionate about leveraging technology to drive innovation, 
       I am eager to apply my skills in a professional setting. Skilled in languages such as Java, Python, and SQL, 
       I am looking for opportunities to grow and contribute to dynamic tech projects.
     </p>
+<!-- Contact Info -->
+      <div class="flex flex-col sm:flex-row justify-center text-center gap-8 text-gray-600">
+        <div>
+          <p class="font-semibold">Phone</p>
+          <p class="text-blue-500">+91 8838270905</p>
+        </div>
+        <div>
+          <p class="font-semibold">Email</p>
+          <p class="text-blue-500">janarthanan14723@gmail.com</p>
+        </div>        
+      </div>
+      <div class="flex justify-center space-x-6 mt-8 text-2xl">
+        <a href="https://linkedin.com/in/janarthanan-p-8a887b247" target="_blank" aria-label="LinkedIn" class="hover:text-yellow-300"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/janarthanan14" target="_blank" aria-label="GitHub" class="hover:text-yellow-300"><i class="fa-brands fa-github"></i></a>
+        <!-- 
+        <a href="mailto:janarthanan14723@gmail.com" class="hover:text-yellow-300"><i class="fa-solid fa-envelope"></i></a>
+        -->
+      </div>
   </section>
 
   <!-- Education Section -->
 <section id="education" class="max-w-5xl mx-auto py-20 px-6" data-aos="fade-up">
   <h2 class="text-3xl font-bold text-center mb-16 text-blue-700">Education</h2>
-
-  <div class="relative border-l-4 border-blue-600 pl-8 space-y-12">
-
-    <!-- MCA -->
-    <div class="relative">
+    <div class="relative border-l-4 border-blue-600 pl-8 space-y-12">
+      <!-- MCA -->
+        <div class="relative">
       <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
         <h3 class="text-xl font-semibold text-blue-700">Master of Computer Applications (MCA)</h3>
         <p class="text-gray-700 font-medium">Puducherry Technological University — 2023–2025</p>
         <p class="text-gray-600 mt-1">CGPA: <strong>8.1</strong></p>
       </div>
-    </div>
-
-    <!-- BCA -->
-    <div class="relative">
+        </div>
+      <!-- BCA -->
+      <div class="relative">
       <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
         <h3 class="text-xl font-semibold text-blue-700">Bachelor of Computer Applications (BCA)</h3>
         <p class="text-gray-700 font-medium">Pondicherry University Community College — 2020–2023</p>
         <p class="text-gray-600 mt-1">CGPA: <strong>7.28</strong></p>
       </div>
-    </div>
-
-    <!-- HSC -->
-    <div class="relative">
+      </div>
+      <!-- HSC -->
+      <div class="relative">
       <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
         <h3 class="text-xl font-semibold text-blue-700">Higher Secondary (HSC)</h3>
         <p class="text-gray-700 font-medium">Jawahar Navodaya Vidyalaya — 2019–2020</p>
         <p class="text-gray-600 mt-1">Percentage: <strong>81%</strong></p>
       </div>
-    </div>
-
-    <!-- SSLC -->
-    <div class="relative">
+      </div>
+      <!-- SSLC -->
+      <div class="relative">
       <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
       <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
         <h3 class="text-xl font-semibold text-blue-700">Secondary School (SSLC)</h3>
         <p class="text-gray-700 font-medium">Jawahar Navodaya Vidyalaya — 2017–2018</p>
         <p class="text-gray-600 mt-1">Percentage: <strong>54.5%</strong></p>
       </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="bg-gray-300 py-20 px-6" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-blue-700 mb-4">Skills & Expertise</h2>
+      <p class="text-gray-600 text-lg mb-12">
+        Strong fundamentals and hands-on experience across AI, Software, and Cloud technologies.
+        Strong fundamentals across multiple technologies — with a passion 
+        for clean code, scalability, and practical implementation.
+      </p>
+
+<!-- Core Skills -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-8 flex items-center justify-center gap-2">
+        Core Skills </h3>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+<!-- Card: AI & Machine Learning -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition transform border-t-4 border-blue-600">
+          <div class="text-4xl mb-3">🤖</div>
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">AI & Machine Learning</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Solid understanding of ML, DL, LLMs, NLP, and Generative AI. Skilled in model training,
+              fine-tuning, and deployment.
+            </p>
+        </div>
+
+<!-- Card: Data Science -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition transform border-t-4 border-green-500">
+          <div class="text-4xl mb-3">📊</div>
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">Data Science & Analytics</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Strong data fundamentals—cleaning, modeling, visualization, and predictive analytics for decision-making.
+            </p>
+        </div>
+
+<!-- Card: Software Development -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition transform border-t-4 border-purple-500">
+          <div class="text-4xl mb-3">💻</div>
+            <h4 class="text-xl font-semibold text-gray-800 mb-2">Software Development</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Solid coding principles, OOP, SDLC, debugging, and full-stack app development using modern frameworks.
+            </p>
+        </div>
+
+<!-- Card: Cloud & Infrastructure -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition transform border-t-4 border-yellow-500">
+          <div class="text-4xl mb-3">☁️</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-2">Cloud & Infrastructure</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Hands-on exposure to AWS and Azure. Familiar with cloud deployment, monitoring, and scaling.
+          </p>
+        </div>
+
+<!-- Card: UI/UX Design -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition transform border-t-4 border-pink-500">
+          <div class="text-4xl mb-3">🎨</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-2">UI / UX Design</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Clean, intuitive interfaces with usability, accessibility, and responsive design principles.
+          </p>
+        </div>
+
+<!-- Card: Quality Assurance -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition transform border-t-4 border-red-500">
+          <div class="text-4xl mb-3">🧪</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-2">Quality Assurance</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Strong in testing fundamentals—manual, unit, integration, and regression testing for reliability.
+          </p>
+        </div>
+      </div>
     </div>
 
+<!-- Technical Skills Section -->
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-8 flex items-center justify-center gap-2">
+        Technical Skills</h2>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+<!-- Programming Languages -->
+        <div class="bg-white border-t-4 border-blue-500 rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition transform">
+          <div class="text-4xl mb-3">💻</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-3">Programming Languages</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Strong basics in <span class="font-semibold text-blue-600">Python, Java, SQL, HTML, CSS, and JavaScript</span>.<br />
+            Familiar with C, C++, C#, Kotlin, and Flutter.
+          </p>
+        </div>
+
+<!-- Frameworks & Libraries -->
+        <div class="bg-white border-t-4 border-green-500 rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition transform">
+          <div class="text-4xl mb-3">🧩</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-3">Frameworks & Libraries</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Experienced with <span class="font-semibold text-green-600">Flask, Django, Spring Boot, and Hibernate</span>.<br />
+            Solid understanding of ML frameworks like TensorFlow, PyTorch, and scikit-learn.
+          </p>
+        </div>
+
+<!-- Databases -->
+        <div class="bg-white border-t-4 border-purple-500 rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition transform">
+          <div class="text-4xl mb-3">🗄️</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-3">Databases</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Solid foundation in <span class="font-semibold text-purple-600">MySQL, SQLite, and PostgreSQL</span>.<br />
+            Hands-on with Firebase and MongoDB for scalable cloud storage.
+          </p>
+        </div>
+
+<!-- Tools & Platforms -->
+        <div class="bg-white border-t-4 border-yellow-500 rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition transform">
+          <div class="text-4xl mb-3">🛠️</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-3">Tools & Platforms</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Strong basics in <span class="font-semibold text-yellow-600">Git, GitHub, VS Code, and Jupyter</span>.<br />
+            Experience with Android Studio and Databricks for project deployment.
+          </p>
+        </div>
+
+<!-- Cloud & DevOps -->
+        <div class="bg-white border-t-4 border-cyan-500 rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition transform">
+          <div class="text-4xl mb-3">☁️</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-3">Cloud & DevOps</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Strong fundamentals in <span class="font-semibold text-cyan-600">AWS and Azure</span> — including hosting, storage, and monitoring.<br />
+            Basic exposure to CI/CD and Docker.
+          </p>
+        </div>
+
+<!-- Testing & QA -->
+        <div class="bg-white border-t-4 border-pink-500 rounded-2xl shadow-lg p-8 hover:-translate-y-2 hover:shadow-xl transition transform">
+          <div class="text-4xl mb-3">🧪</div>
+          <h4 class="text-xl font-semibold text-gray-800 mb-3">Testing & QA</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Well-versed in software testing principles — manual, unit, and integration testing.<br />
+            Strong basics in writing clean, testable, and maintainable code.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- Soft Skills -->
+    <section class="mt-16">
+      <div class="mb-16">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center justify-center gap-2">
+          Soft Skills
+        </h3>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm">Problem Solving</span>
+          <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm">Team Collaboration</span>
+          <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm">Critical Thinking</span>
+          <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm">Adaptability</span>
+          <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm">Leadership</span>
+          <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm">Communication</span>
+          <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm">Project Management</span>
+        </div>
+      </div>
+    </section>
+
+<!-- AI Tools -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center justify-center gap-2">
+        AI Tools Familiarity
+      </h3>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">ChatGPT</span>
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">Claude</span>
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">Gemini</span>
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">NotebookLM</span>
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">Grok AI</span>
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">Midjourney</span>
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">AI Studio</span>
+        <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm">Perplexity</span>
+      </div>
+    </div>
   </div>
 </section>
 
 
   <!-- Projects Section -->
-<section id="projects" class="bg-gray-100 py-20 px-6" data-aos="fade-up">
+<section id="projects" class="bg-white py-20 px-6" data-aos="fade-up">
   <div class="max-w-6xl mx-auto text-center">
     <h2 class="text-3xl font-bold text-blue-700 mb-10">Projects</h2>
-
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Project 1 -->
+<!-- Project 1 -->
       <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
         <h3 class="text-xl font-semibold text-blue-700 mb-2">Geo-Fencing Attendance System</h3>
         <p class="text-gray-700 mb-3">
@@ -137,8 +334,7 @@
         <p class="text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, Flet, FastAPI, Firebase</p>
         <a href="https://github.com/janarthanan14/Geo-Fencing-Based-Attendance-Management-System.git" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
       </div>
-
-      <!-- Project 2 -->
+<!-- Project 2 -->
       <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
         <h3 class="text-xl font-semibold text-blue-700 mb-2">Helmet Detection Using Vision Transformer</h3>
         <p class="text-gray-700 mb-3">
@@ -147,7 +343,6 @@
         <p class="text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, PyTorch, Transformers</p>
         <a href="https://github.com/janarthanan14/Helmet-Detection.git" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
       </div>
-
       <!-- Project 3 -->
       <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
         <h3 class="text-xl font-semibold text-blue-700 mb-2">Hospital Management System</h3>
@@ -159,159 +354,241 @@
         <a href="https://github.com/janarthanan14/Hospital-Management-System" 
         target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a> -->
       </div>
-
     </div>
   </div>
 </section>
 
 
-  <!-- Contact Section -->
-<section id="contact" class="contact sec-pad dynamicBg bg-gray-50 py-20 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="heading heading-sec heading-sec__mb-med text-center mb-10">
-      <span class="heading-sec__main heading-sec__main--lt text-3xl font-bold text-blue-700">Contact</span>
-      <span class="heading-sec__sub heading-sec__sub--lt block mt-2 text-gray-700 text-base">
-        I’m open to opportunities. Send me a message and I’ll get back to you promptly.
-      </span>
+<!-- Certifications Section -->
+<section id="certifications" class="py-16 bg-gray-300 px-6" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-8">Certifications</h2>
+<!-- Swiper Container -->
+    <div class="swiper mySwiper relative">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="assets/Certificates/14.jpg" alt="Data Science and ML" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Data Science and Machine Learning (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/3.jpg" alt="Midjourney AI Art" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Midjourney (AI Art Generator) (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/4.jpg" alt="Midjourney AI Art" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Midjourney (AI Art Generator) (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/5.jpg" alt="Midjourney AI Art" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Midjourney (AI Art Generator) (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/9.jpg" alt="Midjourney AI Art" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Midjourney (AI Art Generator) (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/15.jpg" alt="Google NotebookLM" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Google NotebookLM (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/8.jpg" alt="Google Slides" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Google Slides (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/1.jpg" alt="Microsoft Excel" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Microsoft Excel (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/17.jpg" alt="Microsoft Excel" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Microsoft Excel (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/6.jpg" alt="Microsoft PowerPoint" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Microsoft PowerPoint (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/13.jpg" alt="Git and GitHub" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Git and GitHub (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/19.jpg" alt="IoT" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Internet of Things (IoT) (Udemy)</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/Certificates/16.jpg" alt="Google Project Management" class="mx-auto rounded-lg shadow-md" />
+          <p class="mt-4 text-gray-700 font-medium">Google Project Management (Mindluster)</p>
+        </div>
+      </div>
+<!-- Pagination -->
+      <div class="swiper-pagination mt-8"></div>
+<!-- Navigation Buttons -->
+      <div class="swiper-button-next text-blue-700"></div>
+      <div class="swiper-button-prev text-blue-700"></div>
+    </div>
+  </div>
+</section>
+<!-- Swiper JS and CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<style>
+  /* Ensure pagination dots are spaced properly below the certification names */
+  .swiper-pagination {
+    margin-top: 2rem !important; /* extra space above dots */
+    position: relative !important; /* keep below content */
+    bottom: 0 !important;
+  }
+</style>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+
+
+<!-- Extra-Curricular Activities Section -->
+<section id="extra-curricular" class="py-16 bg-white px-6" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-8 flex items-center justify-center gap-2">
+      <span>Extra-Curricular Activities</span>
     </h2>
 
-    <div class="contact__form-container bg-white p-8 rounded-xl shadow-md">
-      <!-- Formspree Form -->
-      <form 
-        action="https://formspree.io/f/mayvlbqw" 
-        method="POST" 
-        class="contact__form space-y-6"
-        id="contactForm"
-      >
-        <!-- Optional: Subject -->
-        <input type="hidden" name="_subject" value="New contact form submission">
+    <div class="bg-gray-50 rounded-xl shadow-md p-8 text-left max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold text-rose-800 mb-4 border-b-2 border-blue-200 pb-2">
+        National Cadet Corps (NCC) Experience
+      </h3>
 
-        <!-- Name Field -->
-        <div class="contact__form-field">
-          <label class="contact__form-label block font-medium mb-1" for="name">Name</label>
-          <input
-            required
-            placeholder="Enter Your Name"
-            type="text"
-            class="contact__form-input w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            name="name"
-            id="name"
-          />
-        </div>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Proudly served as a Cadet under the <strong>National Cadet Corps (NCC)</strong> — India’s premier youth organization dedicated to fostering discipline, leadership, and patriotism. Successfully completed NCC ‘A’, ‘B’, and ‘C’ Certificate trainings with distinction, reflecting a high level of commitment, responsibility, and leadership.
+      </p>
 
-        <!-- Email Field -->
-        <div class="contact__form-field">
-          <label class="contact__form-label block font-medium mb-1" for="email">Email</label>
-          <input
-            required
-            placeholder="Enter Your Email"
-            type="email"
-            class="contact__form-input w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            name="email"
-            id="email"
-          />
-        </div>
+      <h4 class="text-xl font-semibold text-purple-700 mt-6 mb-2">Training & Certifications</h4>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>Completed all three NCC certification levels (‘A’, ‘B’, and ‘C’) with distinction.</li>
+        <li>Gained extensive training in leadership, disaster response, first aid, and crisis management through command tasks, field drills, and mock operations.</li>
+        <li>Developed strong discipline, time management, and team coordination skills through intensive field exercises.</li>
+      </ul>
 
-        <!-- Message Field -->
-        <div class="contact__form-field">
-          <label class="contact__form-label block font-medium mb-1" for="message">Message</label>
-          <textarea
-            required
-            cols="30"
-            rows="6"
-            class="contact__form-input w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            placeholder="Enter Your Message"
-            name="message"
-            id="message"
-          ></textarea>
-        </div>
+      <h4 class="text-xl font-semibold text-purple-700 mt-6 mb-2">Military & Technical Exposure</h4>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>Hands-on experience in firearms handling, including the <strong>.22 Rifle</strong> and <strong>12-Gauge Shotgun</strong>, with training in safe operation and firing techniques.</li>
+        <li>Completed practical aviation training with flight hours on the <strong>Zen Air CH 701 STOL aircraft</strong>, learning the fundamentals of aerial navigation and flight operations.</li>
+        <li>Immersed in military structure and values, developing a mindset suited for high-responsibility roles in both civilian and defense sectors.</li>
+      </ul>
 
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn--theme bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
-          Submit
-        </button>
+      <h4 class="text-xl font-semibold text-purple-700 mt-6 mb-2">Camps, Events & National Representation</h4>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>Participated in numerous drills, parades, and national-level camps, including the <strong>National Trekking Camp</strong> in Kulamavu, Idukki, Kerala, demonstrating endurance, teamwork, and national representation.</li>
+        <li>Engaged in ceremonial and public events, showcasing consistent enthusiasm, discipline, and team spirit.</li>
+      </ul>
 
-        <!-- Success Message -->
-        <p id="formSuccess" class="text-green-600 mt-4 hidden">Thank you! Your message has been sent successfully.</p>
-      </form>
+      <h4 class="text-xl font-semibold text-purple-700 mt-6 mb-2">Social Impact & Civic Engagement</h4>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li>Actively involved in cleanliness drives, social awareness campaigns, and public safety programs, contributing to community welfare and national development.</li>
+        <li>Promoted civic responsibility and leadership through community service initiatives, reinforcing a strong commitment to public service.</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- Optional JS for showing success message -->
+
+<!-- Back to Top Button -->
+<button id="backToTop" 
+  style="
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(to right, #06b6d4, #0ea5e9);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(6, 182, 212, 0.3);
+    z-index: 50;
+    transition: all 0.3s ease;
+  ">
+  ↑
+</button>
+
 <script>
-  const form = document.getElementById('contactForm');
-  const successMsg = document.getElementById('formSuccess');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        successMsg.classList.remove('hidden');
-        form.reset();
-      } else {
-        alert('Oops! There was a problem submitting your form.');
-      }
-    } catch (error) {
-      alert('Oops! There was a problem submitting your form.');
+  const backToTop = document.getElementById("backToTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = "flex";
+      backToTop.style.alignItems = "center";
+      backToTop.style.justifyContent = "center";
+    } else {
+      backToTop.style.display = "none";
     }
+  });
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>
 
 
 <!-- Footer Section -->
-<footer class="main-footer bg-blue-700 text-white py-10 mt-12">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
+<footer class="bg-gradient-to-r from-blue-800 via-blue-700 to-indigo-800 text-white py-8 mt-16">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
 
-      <!-- Social Links -->
-      <div class="flex flex-col gap-4">
-        <h2 class="heading heading-sm font-bold text-lg">Social</h2>
-        <div class="flex gap-4 mt-2">
-          <a href="https://linkedin.com/in/janarthanan-p-8a887b247" target="_blank" rel="noreferrer">
-            <img class="w-6 h-6" src="assets/png/linkedin-ico.png" alt="LinkedIn"/>
-          </a>
-          <a href="https://github.com/janarthanan14" target="_blank" rel="noreferrer">
-            <img class="w-6 h-6" src="assets/png/github-ico.png" alt="GitHub"/>
-          </a>
-          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-            <img class="w-6 h-6" src="assets/png/twitter-ico.png" alt="Twitter"/>
-          </a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-            <img class="w-6 h-6" src="assets/png/yt-ico.png" alt="YouTube"/>
-          </a>
-          <a href="https://instagram.com/" target="_blank" rel="noreferrer">
-            <img class="w-6 h-6" src="assets/png/insta-ico.png" alt="Instagram"/>
-          </a>
-        </div>
-      </div>
+    <!-- Left Section -->
+    <div class="text-center md:text-left">
+      <h2 class="text-2xl font-bold tracking-wide text-cyan-300">Janarthanan P</h2>
+      <p class="text-gray-200 text-sm mt-1">
+        Building intelligent systems with elegant design & clean code.
+      </p>
+    </div>
 
-      <!-- About / Short Bio 
-      <div>
-        <h4 class="heading heading-sm font-bold text-lg">Janarthanan P</h4>
-        <p class="text-gray-200 mt-2 max-w-sm">
-          MCA Graduate | Full Stack Developer | AI/ML Enthusiast. Passionate about building intelligent systems and modern web applications.
-        </p>
-      </div>
-    </div> -->
-
-    <!-- Lower Footer / Credit -->
-    <div class="text-gray-200 mt-8 text-sm text-center">
-      &copy; © 2025 Janarthanan P. Made with 💙. 
-      <a href="https://github.com/janarthanan14" target="_blank" class="underline">Portfolio</a>
+    <!-- Right Section: Social Icons -->
+    <div class="flex justify-center md:justify-end gap-5">
+      <a href="https://linkedin.com/in/janarthanan-p-8a887b247" target="_blank" rel="noreferrer"
+         class="transform hover:scale-125 transition duration-300">
+        <img class="w-6 h-6" src="assets/png/linkedin-ico.png" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/janarthanan14" target="_blank" rel="noreferrer"
+         class="transform hover:scale-125 transition duration-300">
+        <img class="w-6 h-6" src="assets/png/github-ico.png" alt="GitHub" />
+      </a>
+      <a href="https://x.com/janarthanan147" target="_blank" rel="noreferrer"
+         class="transform hover:scale-125 transition duration-300">
+        <img class="w-6 h-6" src="assets/png/twitter-ico.png" alt="Twitter" />
+      </a>
+      <a href="https://www.instagram.com/j_a_n_a__007/" target="_blank" rel="noreferrer"
+         class="transform hover:scale-125 transition duration-300">
+        <img class="w-6 h-6" src="assets/png/insta-ico.png" alt="Instagram" />
+      </a>
     </div>
   </div>
 </footer>
-
-
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a2e0bf0f3f.js" crossorigin="anonymous"></script>
@@ -324,9 +601,20 @@
   <script>
     new Typed("#typed", {
       strings: [
-        "I build intelligent systems.",
-        "I design modern web applications.",
-        "I analyze and visualize data."
+        "I develop clean, efficient code to solve real-world problems.",
+        "I build responsive and user-friendly web applications.",
+        "I collaborate on projects using modern development tools and workflows.",
+        "I write maintainable code with a focus on performance and scalability.",
+        "I learn quickly and adapt to new technologies with ease.",
+        "I’m passionate about building impactful software solutions.",
+        "I contribute to team projects and continuously improve my skills.",
+        "I bring a strong foundation in programming and a willingness to learn.",
+        "I explore different tech stacks and enjoy solving coding challenges.",
+        "I apply data structures and algorithms to write optimized code.",
+        "I’m ready to relocate for the right opportunity.",
+        "I’m looking to grow as a developer in a collaborative environment.",
+        "I’m open to on-site, hybrid, or remote roles across locations.",
+        "I’m actively seeking entry-level roles where I can contribute and grow.",
       ],
       typeSpeed: 50,
       backSpeed: 25,
