@@ -1,412 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dopefolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Janarthanan P — MCA Graduate | Full Stack Developer | AI/ML Enthusiast" />
+  <title>Janarthanan P | Portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Janarthanan P</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .gradient-bg {
+      background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-700">Janarthanan<span class="text-gray-700">.P</span></h1>
+      <div class="space-x-4 hidden sm:block">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#education" class="hover:text-blue-600">Education</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+        <a href="resume/Janarthanan_Resume.pdf" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Resume</a>
       </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
+    </div>
+  </nav>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-6 gradient-bg text-white">
+    <div data-aos="fade-up">
+      <img src="assets/img/profile.jpg" alt="Profile photo" class="w-36 h-36 rounded-full border-4 border-white shadow-lg mb-6 object-cover" onerror="this.style.display='none'">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-2">Hi, I'm <span class="text-yellow-300">Janarthanan P</span></h2>
+      <h3 class="text-xl sm:text-2xl font-medium mb-4">MCA Graduate |Software Developer | Full Stack Developer | AI/ML Enthusiast</h3>
+      <span id="typed" class="text-lg sm:text-xl italic text-gray-100"></span>
+      <div class="mt-8 space-x-4">
+        <a href="#projects" class="bg-white text-blue-700 font-semibold px-6 py-2 rounded-md shadow hover:bg-gray-200 transition">View Projects</a>
+        <a href="#contact" class="border-2 border-white px-6 py-2 rounded-md font-semibold hover:bg-white hover:text-blue-700 transition">Contact Me</a>
       </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is John Doe</h1>
-        <div class="home-hero__info">
-          <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente solutions for
-            complex problems
-          </p>
-        </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
-        </div>
+      <div class="flex justify-center space-x-6 mt-8 text-2xl">
+        <a href="https://linkedin.com/in/janarthanan-p-8a887b247" target="_blank" aria-label="LinkedIn" class="hover:text-yellow-300"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/janarthanan14" target="_blank" aria-label="GitHub" class="hover:text-yellow-300"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:janarthanan14723@gmail.com" class="hover:text-yellow-300"><i class="fa-solid fa-envelope"></i></a>
       </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
+    </div>
+  </section>
+
+  <!-- About Placeholder -->
+  <section id="about" class="max-w-4xl mx-auto py-20 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center mb-6 text-blue-700">About Me</h2>
+    <p class="text-center text-gray-700 leading-relaxed">
+      I am a recent MCA graduate with a strong interest in programming, software development, 
+      and problem-solving. Passionate about leveraging technology to drive innovation, 
+      I am eager to apply my skills in a professional setting. Skilled in languages such as Java, Python, and SQL, 
+      I am looking for opportunities to grow and contribute to dynamic tech projects.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+<section id="education" class="max-w-5xl mx-auto py-20 px-6" data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-center mb-16 text-blue-700">Education</h2>
+
+  <div class="relative border-l-4 border-blue-600 pl-8 space-y-12">
+
+    <!-- MCA -->
+    <div class="relative">
+      <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-semibold text-blue-700">Master of Computer Applications (MCA)</h3>
+        <p class="text-gray-700 font-medium">Puducherry Technological University — 2023–2025</p>
+        <p class="text-gray-600 mt-1">CGPA: <strong>8.1</strong></p>
+      </div>
+    </div>
+
+    <!-- BCA -->
+    <div class="relative">
+      <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-semibold text-blue-700">Bachelor of Computer Applications (BCA)</h3>
+        <p class="text-gray-700 font-medium">Pondicherry University Community College — 2020–2023</p>
+        <p class="text-gray-600 mt-1">CGPA: <strong>7.28</strong></p>
+      </div>
+    </div>
+
+    <!-- HSC -->
+    <div class="relative">
+      <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-semibold text-blue-700">Higher Secondary (HSC)</h3>
+        <p class="text-gray-700 font-medium">Jawahar Navodaya Vidyalaya — 2019–2020</p>
+        <p class="text-gray-600 mt-1">Percentage: <strong>81%</strong></p>
+      </div>
+    </div>
+
+    <!-- SSLC -->
+    <div class="relative">
+      <div class="absolute -left-5 top-2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-md"></div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-semibold text-blue-700">Secondary School (SSLC)</h3>
+        <p class="text-gray-700 font-medium">Jawahar Navodaya Vidyalaya — 2017–2018</p>
+        <p class="text-gray-600 mt-1">Percentage: <strong>54.5%</strong></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+<section id="projects" class="bg-gray-100 py-20 px-6" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-10">Projects</h2>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">Geo-Fencing Attendance System</h3>
+        <p class="text-gray-700 mb-3">
+          Role-based attendance restricted by GPS location. Students can mark attendance only inside the classroom geofence.
+        </p>
+        <p class="text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, Flet, FastAPI, Firebase</p>
+        <a href="https://github.com/janarthanan14/Geo-Fencing-Based-Attendance-Management-System.git" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">Helmet Detection Using Vision Transformer</h3>
+        <p class="text-gray-700 mb-3">
+          Transformer-based image detection model outperforming YOLOv8 for helmet compliance detection in real-time videos.
+        </p>
+        <p class="text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, PyTorch, Transformers</p>
+        <a href="https://github.com/janarthanan14/Helmet-Detection.git" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">Hospital Management System</h3>
+        <p class="text-gray-700 mb-3">
+          Role-based portal for doctors, patients, and pharmacists to manage appointments, prescriptions, and patient records.
+        </p>
+        <p class="text-gray-600 mb-3"><strong>Tech Stack:</strong> HTML, CSS, JS, PHP, SQL</p>
+        <!-- 
+        <a href="https://github.com/janarthanan14/Hospital-Management-System" 
+        target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a> -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+<section id="contact" class="contact sec-pad dynamicBg bg-gray-50 py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="heading heading-sec heading-sec__mb-med text-center mb-10">
+      <span class="heading-sec__main heading-sec__main--lt text-3xl font-bold text-blue-700">Contact</span>
+      <span class="heading-sec__sub heading-sec__sub--lt block mt-2 text-gray-700 text-base">
+        I’m open to opportunities. Send me a message and I’ll get back to you promptly.
+      </span>
+    </h2>
+
+    <div class="contact__form-container bg-white p-8 rounded-xl shadow-md">
+      <!-- Formspree Form -->
+      <form 
+        action="https://formspree.io/f/mayvlbqw" 
+        method="POST" 
+        class="contact__form space-y-6"
+        id="contactForm"
+      >
+        <!-- Optional: Subject -->
+        <input type="hidden" name="_subject" value="New contact form submission">
+
+        <!-- Name Field -->
+        <div class="contact__form-field">
+          <label class="contact__form-label block font-medium mb-1" for="name">Name</label>
+          <input
+            required
+            placeholder="Enter Your Name"
+            type="text"
+            class="contact__form-input w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            name="name"
+            id="name"
+          />
+        </div>
+
+        <!-- Email Field -->
+        <div class="contact__form-field">
+          <label class="contact__form-label block font-medium mb-1" for="email">Email</label>
+          <input
+            required
+            placeholder="Enter Your Email"
+            type="email"
+            class="contact__form-input w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            name="email"
+            id="email"
+          />
+        </div>
+
+        <!-- Message Field -->
+        <div class="contact__form-field">
+          <label class="contact__form-label block font-medium mb-1" for="message">Message</label>
+          <textarea
+            required
+            cols="30"
+            rows="6"
+            class="contact__form-input w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            placeholder="Enter Your Message"
+            name="message"
+            id="message"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn--theme bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+          Submit
+        </button>
+
+        <!-- Success Message -->
+        <p id="formSuccess" class="text-green-600 mt-4 hidden">Thank you! Your message has been sent successfully.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Optional JS for showing success message -->
+<script>
+  const form = document.getElementById('contactForm');
+  const successMsg = document.getElementById('formSuccess');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        successMsg.classList.remove('hidden');
+        form.reset();
+      } else {
+        alert('Oops! There was a problem submitting your form.');
+      }
+    } catch (error) {
+      alert('Oops! There was a problem submitting your form.');
+    }
+  });
+</script>
+
+
+<!-- Footer Section -->
+<footer class="main-footer bg-blue-700 text-white py-10 mt-12">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
+
+      <!-- Social Links -->
+      <div class="flex flex-col gap-4">
+        <h2 class="heading heading-sm font-bold text-lg">Social</h2>
+        <div class="flex gap-4 mt-2">
+          <a href="https://linkedin.com/in/janarthanan-p-8a887b247" target="_blank" rel="noreferrer">
+            <img class="w-6 h-6" src="assets/png/linkedin-ico.png" alt="LinkedIn"/>
+          </a>
+          <a href="https://github.com/janarthanan14" target="_blank" rel="noreferrer">
+            <img class="w-6 h-6" src="assets/png/github-ico.png" alt="GitHub"/>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+            <img class="w-6 h-6" src="assets/png/twitter-ico.png" alt="Twitter"/>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+            <img class="w-6 h-6" src="assets/png/yt-ico.png" alt="YouTube"/>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noreferrer">
+            <img class="w-6 h-6" src="assets/png/insta-ico.png" alt="Instagram"/>
           </a>
         </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/twitter-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/yt-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a
-            href="#"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
-          >
-            <img
-              src="./assets/png/insta-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
       </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
-    </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! It's
-                <strong>John Doe</strong>
-                and I'm a <strong> Frontend Web Developer </strong> located in
-                Los Angeles. I've done
-                <strong> remote </strong>
-                projects for agencies, consulted for startups, and collaborated
-                with talented people to create
-                <strong>digital products </strong>
-                for both business and consumer use.
-              </p>
-              <p class="about__content-details-para">
-                I'm a bit of a digital product junky. Over the years, I've used
-                hundreds of web and mobile apps in different industries and
-                verticals. Feel free to
-                <strong>contact</strong> me here.
-              </p>
-            </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">SASS</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Shopify</div>
-              <div class="skills__skill">Wordpress</div>
-              <div class="skills__skill">Google ADS</div>
-              <div class="skills__skill">Facebook Ads</div>
-              <div class="skills__skill">Android</div>
-              <div class="skills__skill">IOS</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 1</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 3</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-        </div>
+      <!-- About / Short Bio 
+      <div>
+        <h4 class="heading heading-sm font-bold text-lg">Janarthanan P</h4>
+        <p class="text-gray-200 mt-2 max-w-sm">
+          MCA Graduate | Full Stack Developer | AI/ML Enthusiast. Passionate about building intelligent systems and modern web applications.
+        </p>
       </div>
-    </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
-        <div class="contact__form-container">
-          <form action="#" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
-            <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
-            </p>
-          </div>
-        </div>
+    </div> -->
 
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
-      </div>
-    </footer>
+    <!-- Lower Footer / Credit -->
+    <div class="text-gray-200 mt-8 text-sm text-center">
+      &copy; © 2025 Janarthanan P. Made with 💙. 
+      <a href="https://github.com/janarthanan14" target="_blank" class="underline">Portfolio</a>
+    </div>
+  </div>
+</footer>
 
-    <script src="./index.js"></script>
-  </body>
+
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0bf0f3f.js" crossorigin="anonymous"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Typed.js Setup -->
+  <script>
+    new Typed("#typed", {
+      strings: [
+        "I build intelligent systems.",
+        "I design modern web applications.",
+        "I analyze and visualize data."
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 2000,
+      loop: true
+    });
+  </script>
+
+</body>
 </html>
