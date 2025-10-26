@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio of Janarthanan P — MCA Graduate | Full Stack Developer | AI/ML Enthusiast" />
-
-  <!-- Add your logo here -->
-  <link rel="icon" type="image/jpeg" href="assets/img/profile.jpg" />
   
+<!-- 🔹 Add your logo here -->
+  <link rel="icon" type="image/jpeg" href="assets/img/profile.jpg" />
+
   <title>Janarthanan P | Portfolio</title>
 
 <!-- Tailwind CSS CDN -->
@@ -34,25 +34,66 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Navbar -->
-  <nav class="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+<!-- Navbar -->
+<nav class="w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo + Name -->
+    <div class="flex items-center space-x-2">
       <h1 class="text-xl font-bold text-blue-700">Janarthanan<span class="text-gray-700">.P</span></h1>
-      <div class="space-x-4 hidden sm:block">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#education" class="hover:text-blue-600">Education</a>
-        <a href="#skills" class="hover:text-blue-600">Skills</a>
-        <a href="#projects" class="hover:text-blue-600">Projects</a>
-        <a href="#certifications" class="hover:text-blue-600">Certifications</a>
-        <a href="#extra-curricular" class="hover:text-blue-600">Extra-Curricular Activities</a>
-        <a href="#about" class="hover:text-blue-600">Contact</a>
-        <a href="assets/resume/Resume All in One.pdf" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"> Resume</a>
-      </div>
     </div>
-  </nav>
 
-<!-- Hero Section -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 gradient-bg text-white">
+    <!-- Desktop Menu -->
+    <div class="hidden sm:flex space-x-4 items-center">
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#education" class="hover:text-blue-600">Education</a>
+      <a href="#skills" class="hover:text-blue-600">Skills</a>
+      <a href="#projects" class="hover:text-blue-600">Projects</a>
+      <a href="#certifications" class="hover:text-blue-600">Certifications</a>
+      <a href="#extra-curricular" class="hover:text-blue-600">Extra-Curricular</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+      <a href="assets/resume/Resume All in One.pdf" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Resume</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="sm:hidden text-blue-700 focus:outline-none">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-md">
+    <ul class="flex flex-col items-center space-y-4 py-4 text-gray-700 font-medium">
+      <li><a href="#about" class="hover:text-blue-600" onclick="toggleMenu()">About</a></li>
+      <li><a href="#education" class="hover:text-blue-600" onclick="toggleMenu()">Education</a></li>
+      <li><a href="#skills" class="hover:text-blue-600" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-600" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#certifications" class="hover:text-blue-600" onclick="toggleMenu()">Certifications</a></li>
+      <li><a href="#extra-curricular" class="hover:text-blue-600" onclick="toggleMenu()">Extra-Curricular</a></li>
+      <li><a href="#about" class="hover:text-blue-600" onclick="toggleMenu()">Contact</a></li>
+      <li><a href="assets/resume/Resume All in One.pdf" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700" onclick="toggleMenu()">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- JS for Mobile Menu -->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  let menuOpen = false;
+
+  function toggleMenu() {
+    mobileMenu.classList.toggle("hidden");
+    menuBtn.innerHTML = menuOpen
+      ? '<i class="fas fa-bars text-2xl"></i>'
+      : '<i class="fas fa-times text-2xl"></i>';
+    menuOpen = !menuOpen;
+  }
+
+  menuBtn.addEventListener("click", toggleMenu);
+</script>
+
+<!-- Main Section -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 gradient-bg text-white pt-24">
   <div data-aos="fade-up" class="w-full max-w-2xl">
     
     <!-- Profile Image -->
@@ -83,9 +124,11 @@
         Software Testing & QA
       </a>
     </div>
-    <br><br>
+
     <!-- Typed Text -->
-    <span id="typed" class=" text-base sm:text-xl italic text-gray-100 mt-6"></span>
+    <div class="mt-8">
+      <span id="typed" class="text-base sm:text-xl italic text-gray-100"></span>
+    </div>
 
     <!-- Buttons -->
     <div class="mt-8 flex flex-wrap justify-center gap-4">
