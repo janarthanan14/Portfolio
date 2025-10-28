@@ -393,43 +393,167 @@
 </section>
 
 
-  <!-- Projects Section -->
+<!-- Projects Section -->
 <section id="projects" class="bg-white py-20 px-6" data-aos="fade-up">
   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-blue-700 mb-10">Projects</h2>
+    <h2 class="text-3xl sm:text-4xl font-bold text-indigo-700 mb-12">Projects</h2>
+    
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Project 1 -->
-      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
-        <h3 class="text-xl font-semibold text-blue-700 mb-2">Geo-Fencing Attendance System</h3>
+
+      <!-- Project 1 -->
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Geo-Fencing Based Attendance Management System</h3>
         <p class="text-gray-700 mb-3">
-          Role-based attendance restricted by GPS location. Students can mark attendance only inside the classroom geofence.
+          A Python-based project enabling students to mark attendance only within GPS-defined zones via a mobile interface.
         </p>
-        <p class="text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, Flet, FastAPI, Firebase</p>
-        <a href="https://github.com/janarthanan14/Geo-Fencing-Based-Attendance-Management-System.git" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
+        <ul class="list-disc list-inside text-gray-600 mb-3">
+          <li>Role-based logins for Admin, HOD, Staff, and Students</li>
+          <li>Real-time Firebase integration and FastAPI backend</li>
+          <li>Improved accuracy using geo-fence validation</li>
+        </ul>
+
+        <!-- Tech Stack -->
+        <div class="mb-3">
+          <h4 class="text-violet-600 font-semibold mb-2 flex items-center justify-start gap-2">Tech Stack</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">Python</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">Flet</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">FastAPI</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">Firebase</span>
+          </div>
+        </div>
+
+        <a href="https://github.com/janarthanan14/Geo-Fencing-Based-Attendance-Management-System.git" 
+           target="_blank" 
+           class="text-indigo-500 font-semibold hover:text-indigo-700 transition-colors duration-200">View on GitHub</a>
       </div>
-<!-- Project 2 -->
-      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
-        <h3 class="text-xl font-semibold text-blue-700 mb-2">Helmet Detection Using Vision Transformer</h3>
+
+      <!-- Project 2 -->
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Helmet Detection System Using Vision Transformer</h3>
         <p class="text-gray-700 mb-3">
-          Transformer-based image detection model outperforming YOLOv8 for helmet compliance detection in real-time videos.
+          AI-driven system to detect helmet usage in real-time traffic feeds using transformer-based vision models.
         </p>
-        <p class="text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, PyTorch, Transformers</p>
-        <a href="https://github.com/janarthanan14/Helmet-Detection.git" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
+        <ul class="list-disc list-inside text-gray-600 mb-3">
+          <li>Replaced YOLOv8 with Vision Transformer (ViT) for higher precision</li>
+          <li>Trained with large dataset for better generalization</li>
+          <li>Enhanced detection accuracy in complex traffic visuals</li>
+        </ul>
+
+        <div class="mb-3">
+          <h4 class="text-violet-600 font-semibold mb-2 flex items-center justify-start gap-2">Tech Stack</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">Python</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">Vision Transformer</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">PyTorch</span>
+          </div>
+        </div>
+
+        <a href="https://github.com/janarthanan14/Helmet-Detection.git" 
+           target="_blank" 
+           class="text-indigo-500 font-semibold hover:text-indigo-700 transition-colors duration-200">View on GitHub</a>
       </div>
+
       <!-- Project 3 -->
-      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
-        <h3 class="text-xl font-semibold text-blue-700 mb-2">Hospital Management System</h3>
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Attendance Management System (Android App)</h3>
         <p class="text-gray-700 mb-3">
-          Role-based portal for doctors, patients, and pharmacists to manage appointments, prescriptions, and patient records.
+          Android application developed to digitalize attendance tracking and minimize manual record errors.
         </p>
-        <p class="text-gray-600 mb-3"><strong>Tech Stack:</strong> HTML, CSS, JS, PHP, SQL</p>
-        <!-- 
-        <a href="https://github.com/janarthanan14/Hospital-Management-System" 
-        target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a> -->
+        <ul class="list-disc list-inside text-gray-600 mb-3">
+          <li>Separate portals for Admin and Staff</li>
+          <li>Offline storage using SQL for persistence</li>
+          <li>Simple and clean UI for non-technical users</li>
+        </ul>
+
+        <div class="mb-3">
+          <h4 class="text-violet-600 font-semibold mb-2 flex items-center justify-start gap-2">Tech Stack</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">Android Studio</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">Java</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">SQL</span>
+          </div>
+        </div>
       </div>
+
+      <!-- Project 4 -->
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">AgroDeals – Direct Farm Produce Sales Platform</h3>
+        <p class="text-gray-700 mb-3">
+          Web application connecting farmers directly with consumers for transparent trade and fair pricing.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 mb-3">
+          <li>Role-based login for Admin, Farmer, and Customer</li>
+          <li>AJAX-powered interactive interface</li>
+          <li>Session handling and authentication for persistent login</li>
+        </ul>
+
+        <div class="mb-3">
+          <h4 class="text-violet-600 font-semibold mb-2 flex items-center justify-start gap-2">Tech Stack</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">HTML</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">CSS</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">JavaScript</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">jQuery</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">AJAX</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">PHP</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Hospital Management System Database</h3>
+        <p class="text-gray-700 mb-3">
+          A DBMS-based project for managing hospital operations through multi-user role access and constraint-based data control.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 mb-3">
+          <li>Separate modules for doctors, patients, and pharmacists</li>
+          <li>Appointment scheduling with availability validation</li>
+          <li>Admin panel for data management and user control</li>
+        </ul>
+
+        <div class="mb-3">
+          <h4 class="text-violet-600 font-semibold mb-2 flex items-center justify-start gap-2">Tech Stack</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">HTML</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">CSS</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">JavaScript</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">PHP</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 text-left">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Web Application to Generate Forms for NCC Cadets</h3>
+        <p class="text-gray-700 mb-3">
+          Team project that automates generation of NCC camp forms, reusing stored cadet data to reduce repetitive manual entry.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 mb-3">
+          <li>Login-based profile storage for quick form creation</li>
+          <li>Auto-fill functionality with PDF export</li>
+          <li>Reduced human errors and processing time</li>
+        </ul>
+
+        <div class="mb-3">
+          <h4 class="text-violet-600 font-semibold mb-2 flex items-center justify-start gap-2">Tech Stack</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">HTML</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">CSS</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">JavaScript</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">PHP</span>
+            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm hover:bg-purple-200 transition">SQL</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 
 <!-- Certifications Section -->
